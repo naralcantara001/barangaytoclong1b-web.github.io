@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="barangay, barangay hall, barangay hall imus, barangay toclong 1b, toclong 1-b, toclong Ib, barangay imus">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Home</title>
+</head>
+<body onload="initClock()">
+    <div class="maincontainer">
+        <!--header-->
+        <div class="navbar">
+                <img class="logo" src="logo.png" alt="logo">
+                <p class="barangayname">
+                    <span class="barangay-name-upper">
+                    Republic of the Philippines<br>
+                    Province of Cavite, City of Imus<br>
+                    </span>
+                    <span class="barangay-name">
+                    Barangay Toclong 1-B
+                    </span>
+                </p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="officials.html">BRGY.OFFICIALS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+            <!--digital clock start-->
+            <div class="datetime">
+            <div class="date">
+            <span id="dayname">Day</span>,
+            <span id="month">Month</span>
+            <span id="daynum">00</span>,
+            <span id="year">Year</span>
+            </div> 
+            <div class="time">
+            <span id="hour">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+            </div>
+            </div>
+            <!--digital clock end-->
+            <!--carousel-->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="photo1.png" alt="barangayphoto" style="width:100%" height="300em">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="photo2.png" alt="barangayphoto" style="width:100%" height="300em">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="photo3.png" alt="barangayphoto" style="width:100%" height="300em">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="photo4.png" alt="barangayphoto" style="width:100%" height="300em">
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="photo5.jpeg" alt="barangayphoto" style="width:100%" height="300em">
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="photo6.png" alt="barangayphoto" style="width:100%" height="300em">
+                  </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            <!--end of carousell-->
+            <!--main content-->
+            <div class="content">
+            <div class="service-pledge">
+                <h1 class="home-title">SERVICE PLEDGE</h1>
+                <p class="paragraph paragraph-service">
+                    To show to our community that our barangay is clean peaceful and can provide to its people a fast service and efficient health and livelihood services. <br><br>
+                    To provide on updated, comprehensive, and focused description of all the aspect of life in the barangay.
+                </p>
+            </div>
+            <div class="mission-vission">
+                <div>
+                    <h1 class="home-title">Mission</h1>
+                    <p class="paragraph-content">
+                        To create and implement better programs and guidelines to protect the common interest of the community with regards to education, health, infrastructure, environment, peace and order, disaster preparedness towards a better quality of life for the populace. 
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h1 class="home-title">Vission</h1>
+                    <p class="paragraph-content">
+                        A premier center of highly skilled and unified cityzenry, headed by decent leaders with high morals. A place with people possesing a great appreciation and fear of God Following existing laws; living in a peaceful and well developed community with a progressive economy, sustainable and disaster resillient environment.
+                    </p>
+                </div>
+            </div><br>
+             <!--Covid19 Protocol-->
+             <h1 class="home-title">COVID-19: Protective measures</h1>
+             <div class="protocols">
+                <div class="content1">
+                    <div class="images1">
+                        <img class="imgslide" src="covidprotocols/protocol1.png">
+                        <img class="imgslide" src="covidprotocols/protocol2.jpg">
+                        <img class="imgslide" src="covidprotocols/protocol3.jpg">
+                        <img class="imgslide" src="covidprotocols/protocol4.jpg">
+                        <img class="imgslide" src="covidprotocols/protocol5.jpg">
+                    </div>
+                </div>
+                <h1 class="home-title">Home Quarantine Instructions</h1>
+                <div class="content1">
+                    <div class="images1">
+                        <img class="slide" src="covidprotocols/h1.jpg">
+                        <img class="slide" src="covidprotocols/h2.jpg">
+                        <img class="slide" src="covidprotocols/h3.jpg">
+                        <img class="slide" src="covidprotocols/h8.jpg">
+                        <img class="slide" src="covidprotocols/h9.jpg">
+                        <img class="slide" src="covidprotocols/h10.jpg">
+                    </div>
+                </div>
+            </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("imgslide");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 4000);
+                }
+
+                var Index = 0;
+                Slides();
+                function Slides() {
+                  var i;
+                  var x = document.getElementsByClassName("slide");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  Index++;
+                  if (Index > x.length) {Index = 1}    
+                  x[Index-1].style.display = "block";  
+                  setTimeout(Slides, 4000);
+                }
+            </script>
+            <!--end of protocols-->
+            <div>
+                <h1 class="home-title">ANOUNCEMENTS</h1><br>
+                <p class="p1" style="text-align: center;">Always visit our site for further announcement<br> no regular activites for now.</p>
+                <h1 class="home-title">EVENTS</h1>
+                <p class="events">
+                <h3 class="home">NO EVENTS DUE TO COVID-19</h3>
+                </p>
+            </div>
+        </div>
+        <!--footer-->
+        <!--footer-links-->
+<div class="footer-officials">
+    <span class="footer-content">
+        <p><b>REPUBLIC OF THE PHILIPPINES</b><br><br>
+        All content is in the public domain unless otherwise stated.</p>
+    </span><br>
+    <span class="footer-content">
+        <p><b>GOV.PH</b><br><br>Learn more about the Philippine government,<br>
+            its structure,<br>
+            how government works and the people behind it.<br><br>
+            <a href="https://www.gov.ph/">GOV.PH</a><br>
+            <a href="https://www.gov.ph/data/">Open data portal</a><br>
+            <a href="https://www.officialgazette.gov.ph/">Official Gazette</a></p>
+    </span>
+    <span class="footer-content">
+        <p><b>GOVERNMENT LINKS</b><br><br>
+            <a href="https://president.gov.ph/">Office of the President</a>
+            <br>
+            <a href="http://ovp.gov.ph/">Office of the Vice President</a>
+            <br>
+            <a href="http://legacy.senate.gov.ph/">Senate of the Philippines</a>
+            <br>
+            <a href="http://www.congress.gov.ph/">House of Representatives</a>
+            <br>
+            <a href="https://sc.judiciary.gov.ph/">Supreme Court</a>
+            <br>
+            <a href="https://ca2.judiciary.gov.ph/caws-war/">Court of Appeals</a>
+            <br>
+            <a href="https://sb.judiciary.gov.ph/">Sandiganbayan</a>
+            <br>
+        </p>
+    </span>
+</div>
+<!--footer-->
+<footer>
+    <span class="footernav footer-nav">©2021 Barangay Toclong I-B All Rights Reserved</span>
+    <span class="footer-nav">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="officials.html">BRGY.OFFICIALS</a>
+        <a href="contact.html">CONTACT</a>
+    </span>
+</footer>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

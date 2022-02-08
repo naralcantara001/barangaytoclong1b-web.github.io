@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif ;
+}
+.mySlides, .Slides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  min-width: 50px;
+  position: relative;
+  margin: auto;
+  border-width: 0 2px 0 2px;
+  border-style: solid;
+  border-color: darkblue;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* protocols */
+.protocols{
+    width: 100%
+}
+.content1{
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1em 15% 1em 15% ;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+  }
+
+  .imgslide, .slide{
+    height: 40em;
+    width: 100%;
+  }
+/**/
+.maincontainer{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(30, 30, 65);
+    background: linear-gradient(0deg, rgba(30,30,65,1) 0%, rgba(39,31,219,1)100%);
+    color: whitesmoke;
+    padding: 0.8rem;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+.logo{
+    width: 6rem;
+    cursor: pointer;
+    margin-left: 3rem;
+    border-radius: 50%;
+}
+.barangayname{
+    color:white;
+    font-size: 1.3em;
+    padding-left: 0.5rem;
+    font-family: 'Cinzel', serif;
+}
+.barangay-name-upper{
+    font-family: 'Cinzel', serif;
+    font-size: 0.8em;
+}
+.barangay-name{
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+nav ul{
+    padding-right: 0.5rem;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 2.5rem;
+}
+nav ul li a{
+    color: whitesmoke;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: skyblue;
+}
+span a{
+    color:gainsboro;
+    margin-left: 4%;
+    font-size: 0.8em;
+}
+span a:hover{
+    color: skyblue;
+}
+.datetime{
+    background-color: rgb(39, 41, 219);
+    background: linear-gradient(0deg, rgba(39,31,219,1) 0%, rgba(30,30,65,1)100%);
+    color: whitesmoke;
+    font-size: 0.8em;
+    padding: 0.5rem;
+    padding-left: 16%;
+}
+.date{
+    margin-right: 1rem;
+}
+.date, .time{
+    font-family: mohave;
+}
+.content{
+    text-align: center;
+    width: auto;
+    border-width: 0 2px 0 2px;
+    border-style: solid;
+    border-color: darkblue;
+}
+.home-title{
+    text-decoration: none;
+    font-size:1.3em;
+    padding-top: 1em;
+}
+.paragraph-service{
+    font-size: 1em;
+    text-align: justify;
+    padding: 1.2rem 0 2.5rem 0;
+    margin: 0 15% 0 15%;
+}
+.paragraph-content{
+    padding: 1.2rem 2.5rem 2.5rem 2.5rem;
+    font-size: 1em;
+    text-align: justify;
+}
+.mission-vission{
+    background-color: darkblue;
+    color: whitesmoke;
+    min-height: 10%;
+    padding: 0 8rem 0 8rem ;
+}
+.announcements, .events{
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+.home{
+    color: red;
+    padding: 1.2rem 0 2rem 0;
+}
+footer{
+    color:gainsboro;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.9rem;
+    background-color: rgb(30, 30, 65);
+    background: linear-gradient(0deg, rgba(30,30,65,1) 0%, rgba(39,31,219,1)100%);
+}
+.footernav{
+    font-size: 0.8em;
+}
+.officialsphoto{
+    width: 9rem;
+    height: 9rem;
+    padding-bottom: 0.5em;
+}
+.officials{
+    display: inline-block;
+    padding: 0.8rem;
+    margin: 1rem;
+    border-bottom: solid 2px darkblue;
+    max-width: 15rem;
+    max-height: 20rem;
+}
+.footer-officials{
+    color:darkgray;
+    background-color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5em;  
+    border-width: 0 2px 0 2px;
+    border-style: solid;
+    border-color: darkblue;
+}
+.footer-content{
+    padding:0;
+    min-height: 10rem;
+    margin: 1.5rem;
+    justify-content: center;
+}
+span p a{
+    color: darkgray;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact{
+    padding: 1em 2em 1em 2em;
+    line-height: 1.7em;
+}
+.title{
+    padding-top: 2rem;
+}
+.dutties{
+    font-size: 1em;
+}
+h2{
+    padding-top: 2rem;
+    font-size: 1.3em;
+}
+/*Mobile view 1100px*/
+@media screen and (max-width:1100px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar{
+        display: inline-block;
+        text-align: center;
+        background-color: darkblue;
+        color: whitesmoke;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    nav{
+        text-align: center;
+        display: inline-block;
+    }
+    .logo{
+        text-align: center;
+        width: 5rem;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 0.5rem;
+        margin: 0;
+    }
+    .barangayname-name, .barangay-name-upper{
+        line-height: 2rem;
+        text-align: center;
+        color:white;
+        font-family: 'Cinzel', serif;
+    }
+    .barangay-name-upper{
+        font-size: 1.2em;
+    }
+    .barangay-name{
+        font-size: 1.6em;
+    }
+    nav ul{
+        padding: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    nav ul li a{
+        color: whitesmoke;
+        font-size: 1.2em;
+        text-decoration: none;
+        
+    }
+    .datetime{
+        padding-left: 10rem;
+        font-size: 1em;
+    }
+    
+    .paragraph-service, .p1{
+        margin: 0 7% 0 7%;
+    }
+
+    .mission-vission{
+        background-color: darkblue;
+        padding: 0 3rem 0 3rem;
+    }
+    .paragraph-service{
+        padding: 1rem 2rem 1rem 1.5rem;
+    }
+    .announcements{
+        padding: 0 3rem 0rem 3rem;
+    }
+    .footer-nav{
+        display: inline-block;
+        width: 100%;
+    }
+    .footernav{
+        padding-bottom: 1rem;
+        color:gray;
+        font-size: 0.8em;
+    }
+    .datetime{
+        text-align: center;
+        padding: 0.5rem;
+        line-height: 1.3rem;
+        margin: 0;
+    }
+    .paragraph-service{
+        margin: 0 9% 0 9%;
+    }
+    .mission-vission{
+        padding: 0 6% 0 6%;
+    }
+    .footer-content{
+        padding:0;
+        min-height: 10rem;
+        width: 100%;
+        margin: 1.9rem;
+    }
+    .footer-officials{
+        font-size: 0.8em;
+    }
+}
+
+/* Mobile view 800*/
+@media screen and (max-width:800px){
+    .imgslide, .slide{
+        height: 30em;
+        width: 100%;
+      }
+    .barangay-name-upper{
+        font-size: 1em;
+    }
+    .barangay-name{
+        font-size: 1.4em;
+    }
+    nav ul li a{
+        color: whitesmoke;
+        font-size: 1.2em;
+        text-decoration: none;
+        
+    }
+    .maincontainer{
+        width: 100%;
+    }
+    .paragraph-service, .p1{
+        margin: 0 7% 0 7%;
+    }
+    .mission-vission{
+        padding: 0 3% 0 3%;
+    }
+    .home-title, .home{
+        font-size: 1em;
+    }
+    .paragraph-content, .paragraph-service{
+        font-size: 1em;
+    }
+}
+
+/*Mobile view 600px*/
+@media screen and (max-width:600px){
+    .imgslide, .slide{
+        height: 30em;
+        width: 100%;
+      }
+    .maincontainer{
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 1%;
+        padding-right: 1%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    nav ul{
+        margin-top: 1rem;
+    }
+    nav ul li{
+        padding: 0;
+        margin: 0;
+    }
+    span p a{
+        font-size: 1em;
+    }
+    span a{
+        font-size: 1em;
+    }
+    .barangay-name-upper{
+        font-family: mohave;
+        font-size: 0.7em;
+    }
+    .barangay-name{
+        font-weight: bold;
+        font-family: 'Cinzel', serif;
+        font-size: 1em;
+    }
+    .barangayname-name, .barangay-name-upper{
+        line-height: 1.4rem;
+        text-align: center;
+        color:white;
+        font-family: 'Cinzel', serif;
+    }
+
+    .paragraph-content, .paragraph-service, .p1{
+        font-size: 1em;
+    }
+    nav{
+        font-size: 0.9em;
+
+    }
+    .footer-content{
+        font-size: 0.9em;
+    }
+    nav ul li a{
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+    .footer-content{
+        margin: 0.9rem;
+    }
+    .footernav, .footer-nav{
+        font-size: 0.8em;
+    }
+    span a{
+        font-size: 1em;
+    }
+    .footernav{
+        font-size: 0.9em;
+    }
+
+} 
+
+/*Mobile view 500px*/
+@media screen and (max-width:500px){
+    .imgslide, .slide{
+        height: 20em;
+        width: 100%;
+      }
+}
+
+/*Mobile view 400px*/
+@media screen and (max-width:400px){
+    .imgslide, .slide{
+        height: 20em;
+        width: 100%;
+      }
+    .datetime{
+        font-size: 0.8em;
+    }
+    .barangay-name-upper{
+        font-family: 'Cinzel', serif;
+        font-size: 0.8em;
+    }
+    .barangay-name{
+        font-weight: bold;
+        font-family: 'Cinzel', serif;
+    }
+    .paragraph-content, .paragraph-service, .p1{
+        font-size: 0.9em;
+    }
+    nav{
+        font-size: 0.9em;
+    }
+    .footer-content{
+        font-size: 0.8em;
+    }
+    nav ul li a{
+        font-size: 0.8em;
+        padding: 0.5em;
+    }
+    .footer-content{
+        margin: 0.9rem;
+    }
+    .footernav, .footer-nav{
+        font-size: 0.8em;
+    }
+}
